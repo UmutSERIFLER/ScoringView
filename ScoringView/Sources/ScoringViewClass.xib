@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScoringView" customModule="ScoringView" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScoringViewClass" customModule="ScoringView" customModuleProvider="target">
             <connections>
                 <outlet property="containerView" destination="ZDn-Gh-6FF" id="wfl-2w-T4o"/>
                 <outlet property="contentView" destination="iN0-l3-epB" id="sKC-RH-lc9"/>

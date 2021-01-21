@@ -31,7 +31,7 @@ public class ScoringViewClass: UIView {
         commontInit()
     }
     
-    required init?(coder: NSCoder) {
+    required public init?(coder: NSCoder) {
         super.init(coder: coder)
         commontInit()
     }
@@ -91,7 +91,7 @@ public class ScoringViewClass: UIView {
 
 private extension ScoringViewClass {
     private func commontInit() {
-        let nib = UINib(nibName: "ScoringView", bundle: Bundle(for: ScoringViewClass.self))
+        let nib = UINib(nibName: "ScoringViewClass", bundle: Bundle(for: ScoringViewClass.self))
         guard let view = nib.instantiate(withOwner: self, options: nil).first as? UIView else {
             fatalError("Failed to instantiate nib \(nib)")
         }

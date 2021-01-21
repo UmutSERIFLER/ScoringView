@@ -18,7 +18,7 @@ Pod::Spec.new do |spec|
   spec.name         = "ScoringView"
   spec.version      = "0.0.1"
   spec.summary      = "A short description of ScoringView."
-  # spec.license      = { :type => "MIT"}
+  # spec.license      = { :type => 'MIT', :file => 'LICENSE' }
 
   spec.name          = "ScoringView"
   spec.version       = "0.0.1"
@@ -27,10 +27,10 @@ Pod::Spec.new do |spec|
   spec.homepage      = "https://github.com/UmutSERIFLER/ScoringView"
   spec.license       = "MIT"
   spec.author        = "UmutSERIFLER"
+  spec.ios.deployment_target = '11.0'
   spec.platform      = :ios, "11.0"
   spec.swift_version = "5.0"
-  spec.source       = { :git => "https://github.com/UmutSERIFLER/ScoringView.git", :branch => "main", :tag => "#{spec.version}" }
-  spec.source_files        = "ScoringView/**/*.{h,m,swift}"
-  spec.public_header_files = "ScoringView/**/*.h"
+  spec.source       = { :git => "https://github.com/UmutSERIFLER/ScoringView.git", :branch => "main", :tag => spec.version.to_s }
+  spec.source_files        = "ScoringView/Sources/**/*"
 
 end
