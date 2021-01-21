@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		9D15926325B60BB400F37607 /* ScoringView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D15926125B60BB400F37607 /* ScoringView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9D15926E25B60C0600F37607 /* ScoringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D15926D25B60C0600F37607 /* ScoringView.swift */; };
-		9D15927225B60C5200F37607 /* SourceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D15927125B60C5200F37607 /* SourceView.xib */; };
-		9D15927525B60CD500F37607 /* ContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D15927425B60CD500F37607 /* ContentType.swift */; };
+		9D15926E25B60C0600F37607 /* ScoringViewClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D15926D25B60C0600F37607 /* ScoringViewClass.swift */; };
+		9D15927225B60C5200F37607 /* ScoringView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D15927125B60C5200F37607 /* ScoringView.xib */; };
+		9D15927525B60CD500F37607 /* ContentTypeClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D15927425B60CD500F37607 /* ContentTypeClass.swift */; };
 		9D15927825B60D0500F37607 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D15927725B60D0500F37607 /* UIImage+Extension.swift */; };
 		9D15927B25B60E2600F37607 /* ScoringView.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D15927A25B60E2600F37607 /* ScoringView.xcassets */; };
 /* End PBXBuildFile section */
@@ -19,9 +19,9 @@
 		9D15925E25B60BB400F37607 /* ScoringView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ScoringView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D15926125B60BB400F37607 /* ScoringView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScoringView.h; sourceTree = "<group>"; };
 		9D15926225B60BB400F37607 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9D15926D25B60C0600F37607 /* ScoringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoringView.swift; sourceTree = "<group>"; };
-		9D15927125B60C5200F37607 /* SourceView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SourceView.xib; sourceTree = "<group>"; };
-		9D15927425B60CD500F37607 /* ContentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentType.swift; sourceTree = "<group>"; };
+		9D15926D25B60C0600F37607 /* ScoringViewClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoringViewClass.swift; sourceTree = "<group>"; };
+		9D15927125B60C5200F37607 /* ScoringView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScoringView.xib; sourceTree = "<group>"; };
+		9D15927425B60CD500F37607 /* ContentTypeClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentTypeClass.swift; sourceTree = "<group>"; };
 		9D15927725B60D0500F37607 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		9D15927A25B60E2600F37607 /* ScoringView.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ScoringView.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,7 +77,7 @@
 		9D15926B25B60BDF00F37607 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				9D15927425B60CD500F37607 /* ContentType.swift */,
+				9D15927425B60CD500F37607 /* ContentTypeClass.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -85,7 +85,7 @@
 		9D15926C25B60BE500F37607 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				9D15926D25B60C0600F37607 /* ScoringView.swift */,
+				9D15926D25B60C0600F37607 /* ScoringViewClass.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -93,7 +93,7 @@
 		9D15927025B60C3C00F37607 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				9D15927125B60C5200F37607 /* SourceView.xib */,
+				9D15927125B60C5200F37607 /* ScoringView.xib */,
 				9D15927A25B60E2600F37607 /* ScoringView.xcassets */,
 			);
 			path = Resources;
@@ -169,7 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D15927B25B60E2600F37607 /* ScoringView.xcassets in Resources */,
-				9D15927225B60C5200F37607 /* SourceView.xib in Resources */,
+				9D15927225B60C5200F37607 /* ScoringView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,8 +181,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D15927825B60D0500F37607 /* UIImage+Extension.swift in Sources */,
-				9D15926E25B60C0600F37607 /* ScoringView.swift in Sources */,
-				9D15927525B60CD500F37607 /* ContentType.swift in Sources */,
+				9D15926E25B60C0600F37607 /* ScoringViewClass.swift in Sources */,
+				9D15927525B60CD500F37607 /* ContentTypeClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +193,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -257,6 +258,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -314,6 +316,8 @@
 		9D15926725B60BB400F37607 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -342,6 +346,8 @@
 		9D15926825B60BB400F37607 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
