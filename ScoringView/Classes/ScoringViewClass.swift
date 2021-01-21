@@ -1,5 +1,5 @@
 //
-//  ScoringView.swift
+//  ScoringViewClass.swift
 //  ScoringView
 //
 //  Created by Umut SERIFLER on 18/01/2021.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-public class ScoringView: UIView {
+public class ScoringViewClass: UIView {
 
     @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var containerView: UIView!
@@ -36,7 +36,7 @@ public class ScoringView: UIView {
         commontInit()
     }
     
-    public func generate(for: ContentType = .star, backgroundColor: UIColor = .clear, minLimitValue: Int = 0, maxLimitValue: Int = 100, amount: Int = 5, space: Int = 10, axis: NSLayoutConstraint.Axis = .vertical) {
+    public func generate(for: ContentTypeClass = .star, backgroundColor: UIColor = .clear, minLimitValue: Int = 0, maxLimitValue: Int = 100, amount: Int = 5, space: Int = 10, axis: NSLayoutConstraint.Axis = .vertical) {
         self.addSubview(stackView)
         self.setLimits(min: minLimitValue, max: maxLimitValue)
         self.setAmount(value: amount)
@@ -55,7 +55,7 @@ public class ScoringView: UIView {
         self.amount = value
     }
     
-    private func createContents(for: ContentType = .star) {
+    private func createContents(for: ContentTypeClass = .star) {
         let calculatedButtonSize = self.calculateButtonWidthHeight()
         for order in 0...(self.amount - 1) {
             let origin = CGPoint(x: 0, y: (Int(calculatedButtonSize.width) * order))
@@ -72,7 +72,7 @@ public class ScoringView: UIView {
         return CGSize(width: widthOrHeight, height: widthOrHeight)
     }
     
-    private func buttonGenerator(tag:Int, type: ContentType = .star, frame: CGRect) -> UIButton {
+    private func buttonGenerator(tag:Int, type: ContentTypeClass = .star, frame: CGRect) -> UIButton {
         let button = UIButton(frame: frame)
         button.setImage(self.getImage(name: "star_1"), for: .selected)
         button.setImage(self.getImage(name: "star_2"), for: .reserved)
@@ -89,9 +89,9 @@ public class ScoringView: UIView {
     }
 }
 
-private extension ScoringView {
+private extension ScoringViewClass {
     private func commontInit() {
-        let nib = UINib(nibName: "ScoringView", bundle: Bundle(for: ScoringView.self))
+        let nib = UINib(nibName: "ScoringView", bundle: Bundle(for: ScoringViewClass.self))
         guard let view = nib.instantiate(withOwner: self, options: nil).first as? UIView else {
             fatalError("Failed to instantiate nib \(nib)")
         }
